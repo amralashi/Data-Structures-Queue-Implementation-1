@@ -39,6 +39,10 @@ class Queue {
   //Remove elements from the queue
   dequeue(){
 
+    if(!this.first){
+      return null;
+    }
+    
     const holdingPointer = this.first;
     this.first = this.first.next;
     this.length--;
@@ -67,9 +71,7 @@ myQueue.isEmpty();
 
 myQueue.dequeue();
 myQueue.dequeue();
+myQueue.dequeue();
 myQueue.isEmpty();
 
-myQueue.enqueue('Amr');
-myQueue.enqueue('Bob');
-myQueue.enqueue('Zohra');
-myQueue.enqueue('Mohamed');
+
