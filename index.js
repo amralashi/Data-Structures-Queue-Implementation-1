@@ -71,7 +71,6 @@ myQueue.isEmpty();
 
 myQueue.dequeue();
 myQueue.dequeue();
-myQueue.dequeue();
 myQueue.isEmpty();
 
 
